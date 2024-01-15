@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualitat</title>
+    <meta name="description" content="Últimes notícies del CB El Palau" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <!-- Desktop navbar -->
+      <div class="desktop-nav-container">
+        <button
+          type="button"
+          onclick="location.href='index.html'"
+          aria-label="anar a la pàgina principal"
+        >
+          <img src="./img/logo.svg" alt="logotip del CB El Palau" />
+        </button>
+        <ul>
+          <li class="nav-element">
+            <button>
+              <img
+                src="./img/icons/search.svg"
+                alt="cercador"
+                class="icon-medium"
+                aria-label="cerca"
+              />
+            </button>
+          </li>
+
+          <li class="list-with-subs nav-element">
+            <a href="#" class="has-subcategories">EL CLUB</a>
+            <div class="subcategories-container">
+              <ul>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-element"><a href="actualitat.html" class="nav-selected">ACTUALITAT</a></li>
+          <li class="nav-element"><a href="#">SÓC SOSTENIBLE</a></li>
+          <li class="nav-element"><a href="cataleg.html">BOTIGA</a></li>
+          <li class="nav-element"><a href="contacte.html">CONTACTE</a></li>
+        </ul>
+      </div>
+      <!-- Mobile navbar -->
+      <div class="mobile-nav-container">
+        <div class="mobile-bar">
+          <button type="button" onclick="location.href='index.html'">
+            <img src="./img/logo.svg" alt="logotip del CB Palau" />
+          </button>
+
+          <img
+            src="./img/icons/menu.svg"
+            alt="menu"
+            class="icon-large cursor-pointer"
+            id="menuButton"
+          />
+        </div>
+        <div class="position-relative">
+          <ul class="mobile-menu">
+            <li class="has-subcategories has-mobile-subs">
+              <span class="cursor-pointer">EL CLUB</span>
+              <ul>
+                <li><a href="#">Qui sóm?</a></li>
+                <li><a href="#">Filosofia i valors</a></li>
+                <li><a href="#">Els nostres equips</a></li>
+                <li><a href="#">Serveis del club</a></li>
+              </ul>
+            </li>
+            <li><a href="actualitat.html" class="nav-selected">ACTUALITAT</a></li>
+            <li><a href="#">SÓC SOSTENIBLE</a></li>
+            <li><a href="cataleg.html">BOTIGA</a></li>
+            <li><a href="contacte.html">CONTACTE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+    <!-- MAIN CONTENT STARTS -->
+    <main>
+      <div class="container">
+        <!-- Últimes notícies section -->
+    <header>
+      <h1>Actualitat</h1>
+    </header>
+          <section>
+          <h3>Últimes notícies</h3>
+          <article class="imggroup">
+            <img
+              src="./img/png/equip-fem.jpg"
+              alt="Equip femení abraçant-se"
+              class="main-image"
+            />
+            <div class="title-box">
+              <h2>El primer equip guanya a Balaguer i ja és líder</h2>
+              <p>
+                L'equip s'ha imposat 66-63 gràcies a un excelent inici de partit
+                i acomula cinc victories seguides
+              </p>
+            </div>
+          </article>
+          <div class="grid-row">
+            <article class="col-6 imggroup">
+              <img
+                src="./img/png/jugador-arrancada.jpg"
+                alt="Jugadora arrancant amb la pilota"
+                class="secondary-image"
+              />
+              <div class="title-box">
+                <h2>Ja us podeu apuntar al campus</h2>
+                <p>Serà del 1 de juliol al 15 d'agost i hi haurà 3 torns</p>
+              </div>
+            </article>
+            <article class="col-6 imggroup">
+              <img
+                src="./img/png/jugadora-esquena.jpg"
+                alt="Jugadora de bàsquet"
+                class="secondary-image"
+              />
+              <div class="title-box">
+                <h2>El sènior B perd al Balaguer</h2>
+                <p>Es la primera derrota de tota la temporada</p>
+              </div>
+            </article>
+          </div>
+          <div class="grid-row">
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/jugadores-disputa.jpg"
+                alt="Dues jugadores disputant una pilota"
+                class="secondary-image"
+              />
+              <div class="title-box">
+                <h3>Tercera victoria del sots-21</h3>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/jugador-botant.jpg"
+                alt="Equip femení abraçant-se"
+                class="secondary-image"
+              />
+              <div class="title-box">
+                <h3>Pere Mitjà, nou fitxatge pel Palau</h3>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/jugador-pilota.jpg"
+                alt="Jugador llançant-se a buscar una pilota"
+                class="secondary-image"
+              />
+              <div class="title-box">
+                <h3>El junior guanya de nou a Vallfogona</h3>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/jugadors-salt.jpg"
+                alt="Jugadors saltant a per una pilota"
+                class="secondary-image"
+              />
+              <div class="title-box">
+                <h3>Nova jornada de portes obertes</h3>
+              </div>
+            </article>
+          </div>
+          <div class="d-flex search-bar flex-col gap-1">
+            <label for="buscaodr">Cercador de notícies:</label>
+            <div class="input-group">
+              <button type="button" aria-label="cerca">
+                <img
+                  src="./img/icons/search-blue.svg"
+                  alt=""
+                  class="icon-small"
+                />
+              </button>
+              <input type="text" id="buscaodr" placeholder="Cerca entrades més antigues"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- Properes activitats section -->
+        <section>
+          <h3>Properes activitats</h3>
+          <div class="grid-row">
+            <div class="col-3 mar-bot-2">
+              <img
+                src="./img/png/cistella-pilota.jpg"
+                alt="Cistella de bàsquet amb una pilota entrant"
+                class="square-image mar-bot-1"
+              />
+              <div class="d-flex gap-2 justify-between">
+                <div class="d-flex flex-col gap-min">
+                  <p class="margin-0"><strong>Desplaçament amb el primer equip</strong></p>
+                  <p class="margin-0">12/10/2022</p>
+                </div>
+                <div class="d-flex align-center">
+                  <img class="icon-large mar-right-1" src="./img/icons/Info.svg" alt="">
+                </div>
+              </div>
+            </div>           
+            <div class="col-3">
+              <img
+                src="./img/png/cistella.jpg"
+                alt="Cistella de bàsquet"
+                class="square-image"
+              />             
+              <div class="d-flex gap-2 justify-between">
+                <div class="d-flex flex-col gap-min">
+                  <p class="margin-0"><strong>Torneig de bàsquet 3x3 a la Bòbila</strong></p>
+                  <p class="margin-0">12/10/2022</p>
+                </div>
+                <div class="d-flex align-center">
+                  <img class="icon-large mar-right-1" src="./img/icons/Info.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <img
+                src="./img/png/bus.jpg"
+                alt="Autobús"
+                class="square-image"
+              />              
+              <div class="d-flex gap-2 justify-between">
+                <div class="d-flex flex-col gap-min">
+                  <p class="margin-0"><strong>Excursió a Barcelona per veure un partit d'ACB</strong></p>
+                  <p class="margin-0">12/10/2022</p>
+                </div>
+                <div class="d-flex align-center">
+                  <img class="icon-large mar-right-1" src="./img/icons/Info.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <img
+                src="./img/png/grup-persones.jpg"
+                alt="Grup de persones assegudes en un llac"
+                class="square-image"
+              />
+              <div class="d-flex gap-2 justify-between">
+                <div class="d-flex flex-col gap-min">
+                  <p class="margin-0"><strong>Excursió a l'estany d'Ivars i Vila-Sana</strong></p>
+                  <p class="margin-0">12/10/2022</p>
+                </div>
+                <div class="d-flex align-center">
+                  <img class="icon-large mar-right-1" src="./img/icons/Info.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- MAIN CONTENT ENDS -->
+  </body>
+</html>

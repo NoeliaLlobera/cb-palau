@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacte</title>
+    <meta name="description" content="Catàleg de la botiga del CB El Palau" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <!-- Desktop navbar -->
+      <div class="desktop-nav-container">
+        <button
+          type="button"
+          onclick="location.href='index.html'"
+          aria-label="anar a la pàgina principal"
+        >
+          <img src="./img/logo.svg" alt="logotip del CB El Palau" />
+        </button>
+        <ul>
+          <li class="nav-element">
+            <button>
+              <img
+                src="./img/icons/search.svg"
+                alt="cercador"
+                class="icon-medium"
+                aria-label="cerca"
+              />
+            </button>
+          </li>
+
+          <li class="list-with-subs nav-element">
+            <a href="#" class="has-subcategories">EL CLUB</a>
+            <div class="subcategories-container">
+              <ul>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-element"><a href="actualitat.html">ACTUALITAT</a></li>
+          <li class="nav-element"><a href="#">SÓC SOSTENIBLE</a></li>
+          <li class="nav-element"><a href="cataleg.html">BOTIGA</a></li>
+          <li class="nav-element"><a href="contacte.html" class="nav-selected">CONTACTE</a></li>
+        </ul>
+      </div>
+      <!-- Mobile navbar -->
+      <div class="mobile-nav-container">
+        <div class="mobile-bar">
+          <button type="button" onclick="location.href='index.html'">
+            <img src="./img/logo.svg" alt="logotip del CB Palau" />
+          </button>
+
+          <img
+            src="./img/icons/menu.svg"
+            alt="menu"
+            class="icon-large cursor-pointer"
+            id="menuButton"
+          />
+        </div>
+        <div class="position-relative">
+          <ul class="mobile-menu">
+            <li class="has-subcategories has-mobile-subs">
+              <span class="cursor-pointer">EL CLUB</span>
+              <ul>
+                <li><a href="#">Qui sóm?</a></li>
+                <li><a href="#">Filosofia i valors</a></li>
+                <li><a href="#">Els nostres equips</a></li>
+                <li><a href="#">Serveis del club</a></li>
+              </ul>
+            </li>
+            <li><a href="actualitat.html">ACTUALITAT</a></li>
+            <li><a href="#">SÓC SOSTENIBLE</a></li>
+            <li><a href="cataleg.html">BOTIGA</a></li>
+            <li><a href="contacte.html" class="nav-selected">CONTACTE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>Contacte</h1>
+      </header>
+      <main>
+        <section>
+          <h3 class="mar-bot-1">Vols parlar amb el club?</h3>
+          <p>
+            Si tens algun dubte o suggeriment per a nosaltres deixa'ns el teu
+            missatge omplint el formulari que trobaràs a continuacíó. Et
+            respondrem al correu electrònic que ens indiquis el més ràpid que
+            poguem.
+          </p>
+          <p class="col-12">Els camps marcats amb un asterisc (*) són obligatoris.</p>
+            <form class="grid-row">
+                <div class="form-group col-6">
+                    <fieldset>
+                        <legend>Dades de contacte</legend> 
+                        <label for="name" class="required">Nom:</label>
+                        <input type="text" id="name" required>                      
+                        <label for="surname" class="required" >Cognoms:</label>
+                        <input type="text" id="surname" required>                       
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" id="email" required>                      
+                        <label for="telf">Número de telèfon:</label>
+                        <input type="tel" id="telf">                   
+                    </fieldset>
+                </div>
+    
+                <div class="form-group col-6">
+                    <fieldset>
+                        <legend>Motiu</legend>
+                        
+                        <label for="title" class="required">Titol de la consulta:</label>
+                        <input type="text" id="title" required>
+                        
+                        <label for="type" class="required">Tipus de consulta:</label>
+                        <select id="type" required>
+                          <option value="">Selecciona...</option>
+                            <option value="info">Informació</option>
+                            <option value="suggeriment">Suggeriment</option>
+                            <option value="queixa">Queixa</option>
+                            <option value="altres">Altres</option>
+                        </select>
+                        
+                        <label for="message" class="required">Missatge:</label>
+                        <textarea id="message" required></textarea>
+                        
+                        <div class="checkbox-field">
+                            <label for="member">Ets membre del club?</label>
+                            <input type="checkbox" id="member">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-12 d-flex justify-center gap-1">
+                    <button type="reset" class="btn-primary btn-icon d-flex align-center justify-center">Esborrar formulari <img src="./img/icons/trash.svg" alt=""></button>
+                    <button type="submit" class="btn-call btn-icon d-flex align-center justify-center gap-min">Enviar formulari <img src="./img/icons/send.svg" alt=""></button>             
+                </div>
+              </form>
+        </section>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+</html>

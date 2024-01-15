@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catàleg</title>
+    <meta name="description" content="Catàleg de la botiga del CB El Palau" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <!-- Desktop navbar -->
+      <div class="desktop-nav-container">
+        <button
+          type="button"
+          onclick="location.href='index.html'"
+          aria-label="anar a la pàgina principal"
+        >
+          <img src="./img/logo.svg" alt="logotip del CB El Palau" />
+        </button>
+        <ul>
+          <li class="nav-element">
+            <button>
+              <img
+                src="./img/icons/search.svg"
+                alt="cercador"
+                class="icon-medium"
+                aria-label="cerca"
+              />
+            </button>
+          </li>
+
+          <li class="list-with-subs nav-element">
+            <a href="#" class="has-subcategories">EL CLUB</a>
+            <div class="subcategories-container">
+              <ul>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-element"><a href="actualitat.html">ACTUALITAT</a></li>
+          <li class="nav-element"><a href="#">SÓC SOSTENIBLE</a></li>
+          <li class="nav-element"><a href="cataleg.html" class="nav-selected">BOTIGA</a></li>
+          <li class="nav-element"><a href="contacte.html">CONTACTE</a></li>
+        </ul>
+      </div>
+      <!-- Mobile navbar -->
+      <div class="mobile-nav-container">
+        <div class="mobile-bar">
+          <button type="button" onclick="location.href='index.html'">
+            <img src="./img/logo.svg" alt="logotip del CB Palau" />
+          </button>
+
+          <img
+            src="./img/icons/menu.svg"
+            alt="menu"
+            class="icon-large cursor-pointer"
+            id="menuButton"
+          />
+        </div>
+        <div class="position-relative">
+          <ul class="mobile-menu">
+            <li class="has-subcategories has-mobile-subs">
+              <span class="cursor-pointer">EL CLUB</span>
+              <ul>
+                <li><a href="#">Qui sóm?</a></li>
+                <li><a href="#">Filosofia i valors</a></li>
+                <li><a href="#">Els nostres equips</a></li>
+                <li><a href="#">Serveis del club</a></li>
+              </ul>
+            </li>
+            <li><a href="actualitat.html">ACTUALITAT</a></li>
+            <li><a href="#">SÓC SOSTENIBLE</a></li>
+            <li><a href="cataleg.html" class="nav-selected">BOTIGA</a></li>
+            <li><a href="contacte.html">CONTACTE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- MAIN CONTENT STARTS -->
+    <main>
+      <div class="container">
+        <!-- HEADER SECTION -->
+        <header>
+          <h1>Catàleg</h1>
+          <div class="d-md-flex justify-between">
+            <h3>Packs d'equipacions</h3>
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary mar-right-1 btn-icon mar-bot-1"
+              >
+                <div>
+                  Cistella
+                  <img
+                    src="./img/icons/basket.svg"
+                    style="margin: 0; padding: 0"
+                    alt=""
+                  />
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-call btn-icon mar-bot-1 mar-right-1"
+              >
+                <div>
+                  Pagament
+                  <img
+                    src="./img/icons/credit-card.svg"
+                    style="margin: 0; padding: 0"
+                    alt=""
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- HEADER SECTION ENDS -->
+
+        <section class="grid-row">
+          <article class="col-6 imggroup">
+            <img
+              src="./img/png/samarreta-negra.png"
+              alt="Samarreta negra"
+              class="secondary-image border-solid-black"
+            />
+            <div class="title-box title-shop">
+              <h2>Pack masculí</h2>
+              <p>Preu: 85€</p>
+              <div class="d-flex gap-min">
+                <p>Talla:</p>
+                <select name="size" id="size" class="color-black">
+                  <option value="XS" selected class="color-black">XS</option>
+                  <option value="S" class="color-black">S</option>
+                  <option value="M" class="color-black">M</option>
+                  <option value="L" class="color-black">L</option>
+                  <option value="XL" class="color-black">XL</option>
+                </select>
+                <a href="#" class="d-flex"
+                  >Afegeix
+                  <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                /></a>
+              </div>
+            </div>
+          </article>
+          <article class="col-6 imggroup">
+            <img
+              src="./img/png/polo-vermell.png"
+              alt="Polo vermell"
+              class="secondary-image border-solid-black"
+            />
+            <div class="title-box title-shop">
+              <h2>Pack femení</h2>
+              <p>Preu: 85€</p>
+              <div class="d-flex gap-min">
+                <p>Talla:</p>
+                <select name="size" id="size" class="color-black">
+                  <option value="XS" selected class="color-black">XS</option>
+                  <option value="S" class="color-black">S</option>
+                  <option value="M" class="color-black">M</option>
+                  <option value="L" class="color-black">L</option>
+                  <option value="XL" class="color-black">XL</option>
+                </select>
+                <a href="#" class="d-flex"
+                  >Afegeix
+                  <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                /></a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <h3 class="mar-bot-1">Altres productes</h3>
+          <div class="grid-row">
+            <button
+              type="button"
+              class="btn-primary mar-right-1 btn-icon mar-bot-1 col-2"
+            >
+              <div>
+                Filtres
+                <img
+                  src="./img/icons/filter.svg"
+                  style="margin: 0; padding: 0"
+                  alt=""
+                />
+              </div>
+            </button>
+            <div class="input-group col-3" >
+              <button type="button" class="cursor-pointer" aria-label="cerca">
+                <img
+                  src="./img/icons/search-blue.svg"
+                  alt=""
+                  class="icon-small"
+                />
+              </button>
+              <input
+                type="text"
+                id="buscaodr"
+                aria-label="cercador d'entrades anteriors"
+                placeholder="Cerca entrades més antigues"
+
+              />
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/equipacio-taronja.jpg"
+                alt="Equipació taronja"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Equipació local</h3>
+                <p>Preu: 35€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/jugador-baloncesto-femenino-caucasico-joven-equipo-que-presenta-confiado-balon-aislado-fondo-blanco_155003-41810.jpg"
+                alt="Equipació de bàsquet blava"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Equipació visitant</h3>
+                <p>Preu: 35€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/equipacio-retro.jpg"
+                alt="Samarreta vintage"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Samarreta vintage</h3>
+                <p>Preu: 25€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/sudadera-patró.jpg"
+                alt="Desuadora amb patró groc"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Dessuadora</h3>
+                <p>Preu: 25€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-row">
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/samarreta-blanca.jpg"
+                alt="Samarreta de color blanc"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Samarreta de tir</h3>
+                <p>Preu: 10€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/jugador-botant.jpg"
+                alt="Jugador de bàsquet botant una pilota"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Peto entrenament</h3>
+                <p>Preu: 22€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/polo-vermell.png"
+                alt="Polo de color vermell"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Polo femení</h3>
+                <p>Preu: 25€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+            <article class="col-3 imggroup">
+              <img
+                src="./img/png/samarreta-negra.png"
+                alt="Polo de color negre"
+                class="secondary-image border-solid-black"
+              />
+              <div class="title-box title-shop">
+                <h3>Polo masculí</h3>
+                <p>Preu: 25€</p>
+                <div class="d-flex gap-min">
+                  <p>Talla:</p>
+                  <select name="size" id="size" class="color-black">
+                    <option value="XS" selected class="color-black">XS</option>
+                    <option value="S" class="color-black">S</option>
+                    <option value="M" class="color-black">M</option>
+                    <option value="L" class="color-black">L</option>
+                    <option value="XL" class="color-black">XL</option>
+                  </select>
+                  <a href="#" class="d-flex"
+                    >Afegeix
+                    <img src="./img/icons/add.svg" class="icon-medium" alt=""
+                  /></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="block-center">
+            <button class="btn-link d-flex align-center gap-min">
+              Càrrega més productes
+              <img src="./img/icons/add-black.svg" alt="" class="icon-medium" />
+            </button>
+            <button
+              type="button"
+              class="btn btn-call btn-icon mar-bot-1 mar-right-1"
+            >
+              <div>
+                Pagament
+                <img
+                  src="./img/icons/credit-card.svg"
+                  style="margin: 0; padding: 0; width: f"
+                  alt=""
+                />
+              </div>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- MAIN CONTENT ENDS -->
+    <!-- FOOTER STARTS -->
+    <footer></footer>
+    <!-- FOOTER ENDS -->
+  </body>
+</html>

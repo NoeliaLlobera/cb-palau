@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <title>Inici</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pàgina per a socis del CB El Palau" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <!-- Desktop navbar -->
+      <div class="desktop-nav-container">
+        <button
+          type="button"
+          onclick="location.href='index.html'"
+          aria-label="anar a la pàgina principal"
+        >
+          <img src="./img/logo.svg" alt="logotip del CB El Palau" />
+        </button>
+        <ul>
+          <li class="nav-element">
+            <button>
+              <img
+                src="./img/icons/search.svg"
+                alt="cercador"
+                class="icon-medium"
+                aria-label="cerca"
+              />
+            </button>
+          </li>
+
+          <li class="list-with-subs nav-element">
+            <a href="#" class="has-subcategories">EL CLUB</a>
+            <div class="subcategories-container">
+              <ul>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+                <li><a href="#">element1</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-element"><a href="actualitat.html">ACTUALITAT</a></li>
+          <li class="nav-element"><a href="#">SÓC SOSTENIBLE</a></li>
+          <li class="nav-element"><a href="cataleg.html">BOTIGA</a></li>
+          <li class="nav-element"><a href="contacte.html">CONTACTE</a></li>
+        </ul>
+      </div>
+      <!-- Mobile navbar -->
+      <div class="mobile-nav-container">
+        <div class="mobile-bar">
+          <button type="button" onclick="location.href='index.html'">
+            <img src="./img/logo.svg" alt="logotip del CB Palau" />
+          </button>
+
+          <img
+            src="./img/icons/menu.svg"
+            alt="menu"
+            class="icon-large cursor-pointer"
+            id="menuButton"
+          />
+        </div>
+        <div class="position-relative">
+          <ul class="mobile-menu">
+            <li class="has-subcategories has-mobile-subs">
+              <span class="cursor-pointer">EL CLUB</span>
+              <ul>
+                <li><a href="#">Qui sóm?</a></li>
+                <li><a href="#">Filosofia i valors</a></li>
+                <li><a href="#">Els nostres equips</a></li>
+                <li><a href="#">Serveis del club</a></li>
+              </ul>
+            </li>
+            <li><a href="actualitat.html">ACTUALITAT</a></li>
+            <li><a href="#">SÓC SOSTENIBLE</a></li>
+            <li><a href="cataleg.html">BOTIGA</a></li>
+            <li><a href="contacte.html">CONTACTE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- MAIN CONTENT STARTS -->
+    <main>
+      <div class="container mar-bot-1">
+        <h1>Inici</h1>
+      </div>
+      
+      <section>
+        <div class="banner-group">
+          <img src="./img/png/equip-fem.jpg" alt="" class="banner-image" />
+        </div>
+        <div class="title-box title-banner">
+          <a href="#" class="unset-link-format">
+            <h2 class="">El primer equip guanya a Balaguer i ja és líder</h2>
+            <p>
+              L'equip s'ha imposat 66-63 gràcies a un excelent inici de partit i
+              acomula cinc victories seguides
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <div class="container">
+        <section>
+          <h2 class="mt-3">Últimes notícies</h2>
+          <div class="grid-row">
+            <article class="col-3 imggroup">
+              <a href="#" class="unset-link-format">
+                <img
+                  src="./img/png/cistella-pilota.jpg"
+                  alt=""
+                  class="secondary-image"
+                />
+                <div class="title-box">
+                  <h3>Ja us podeu apuntar al campus</h3>
+                </div>
+              </a>
+            </article>
+
+            <article class="col-3 imggroup">
+              <a href="#" class="unset-link-format">
+                <img
+                  src="./img/png/jugador-blau-esquena.jpg"
+                  alt="Jugador botant la pilota"
+                  class="secondary-image"
+                />
+                <div class="title-box">
+                  <h3>El sènior B perd al Balaguer</h3>
+                </div>
+              </a>
+            </article>
+            <article class="col-3 imggroup">
+              <a href="#" class="unset-link-format">
+                <img
+                  src="./img/png/jugador-arrancada.jpg"
+                  alt="Jugador de bàsquet"
+                  class="secondary-image"
+                />
+                <div class="title-box">
+                  <h3>Tercera victoria del sots-21</h3>
+                </div>
+              </a>
+            </article>
+            <article class="col-3 imggroup">
+              <a href="#" class="unset-link-format">
+                <img
+                  src="./img/png/jugadora-esquena.jpg"
+                  alt="Jugadora de bàsquet d'esquena"
+                  class="secondary-image"
+                />
+                <div class="title-box">
+                  <h3>El cadet es posa primer</h3>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <div class="banner-with-text-group">
+          <img
+            src="./img/png/cistella.jpg"
+            alt="Cistella de bàsquet"
+            class="banner-image banner-with-text banner-large-text"
+            style="position: relative"
+          />
+          <div class="text-inside-banner d-flex flex-col align-end">
+            <div>
+              <h2>VOLS FORMAR PART DEL NOSTRE CLUB?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                ac libero eget lorem sodales porta quis interdum nisl. Etiam
+                efficitur luctus erat, at imperdiet ex sodales sed.Donec orci
+                ligula, volutpat et porta eu, consequat in sem. Integer eget
+                nulla nulla. Aenean vulputate dui purus, vitae tempor enim
+                consequat vel. Suspendisse potenti. Donec accumsan pulvinar
+                aliquam.
+              </p>
+            </div>
+            <div>
+              <button
+                class="btn-call"
+                type="button"
+                onclick="location.href='#'"
+              >
+                APUNTA'T
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section>
+          <h2>Productes del club</h2>
+          <div class="grid-row">
+            <div class="col-5 d-flex flex-col gap-1 align-center">
+              <div>
+                <button
+                  class="btn-primary"
+                  type="button"
+                  onclick="location.href='cataleg.html'"
+                >
+                  ACCÈS A LA BOTIGA
+                </button>
+              </div>
+              <img
+                src="./img/png/jugador-botant.jpg"
+                alt="Jugador de bàsquet botant una pilota"
+                class="secondary-banner"
+              />
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+              <h3>Segona vida</h3>
+              <p>
+                Entra al nostre espai d'intercanvi i aconsegueix productes de
+                segona mà a bon preu. Ajudan's a ser més sostenibles!
+              </p>
+              <div class="d-flex justify-center">
+                <button
+                  class="btn-primary"
+                  type="button"
+                  onclick="location.href='#'"
+                >
+                  ESPAI D'INTERCANVI
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- MAIN CONTENT ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <!-- IMPLEMENT FOOTER -->
+    </footer>
+    <!-- FOOTER ENDS -->
+  </body>
+</html>
